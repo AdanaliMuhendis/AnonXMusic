@@ -46,7 +46,7 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎")
+            m = await message.reply_text("💞")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -80,7 +80,7 @@ async def start_pm(client, message: Message, _):
             if await is_on_off(2):
                 return await app.send_message(
                     chat_id=config.LOGGER_ID,
-                    text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                    text=f"{message.from_user.mention} 𝙱𝚘𝚝𝚞𝚗 𝙱𝚊𝚜̧𝚕𝚊𝚍ı𝚐̆ı𝚗ı 𝙺𝚘𝚗𝚝𝚛𝚘𝚕 𝙴𝚍𝚒𝚗𝚒𝚣... <b>𝙿𝚊𝚛𝚌̧𝚊 𝙰𝚢𝚛ı𝚗𝚝ı𝚕𝚊𝚛ı</b>.\n\n<b>𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸 𝙸𝙳 :</b> <code>{message.from_user.id}</code>\n<b>𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸 𝙰𝙳𝙸 :</b> @{message.from_user.username}",
                 )
     else:
         out = private_panel(_)
@@ -92,7 +92,7 @@ async def start_pm(client, message: Message, _):
         if await is_on_off(2):
             return await app.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
+                text=f"{message.from_user.mention} 𝙱𝚘𝚝 𝙱𝚊𝚜̧𝚕𝚊𝚍ı...\n\n<b>𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸 𝙸𝙳 :</b> <code>{message.from_user.id}</code>\n<b>𝙺𝚄𝙻𝙻𝙰𝙽𝙸𝙲𝙸 𝙰𝙳𝙸 :</b> @{message.from_user.username}",
             )
 
 
