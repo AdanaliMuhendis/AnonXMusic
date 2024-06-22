@@ -112,13 +112,13 @@ async def update_(client, message, _):
 
 @app.on_message(filters.command(["restart"]) & SUDOERS)
 async def restart_(_, message):
-    response = await message.reply_text("ʀᴇsᴛᴀʀᴛɪɴɢ...")
+    response = await message.reply_text("<b>»𝚈𝚎𝚗𝚒𝚍𝚎𝚗 𝙱𝚊𝚜̧𝚕𝚊𝚝ı𝚕ı𝚢𝚘𝚛...<b>")
     ac_chats = await get_active_chats()
     for x in ac_chats:
         try:
             await app.send_message(
                 chat_id=int(x),
-                text=f"{app.mention} ɪs ʀᴇsᴛᴀʀᴛɪɴɢ...\n\nʏᴏᴜ ᴄᴀɴ sᴛᴀʀᴛ ᴩʟᴀʏɪɴɢ ᴀɢᴀɪɴ ᴀғᴛᴇʀ 15-20 sᴇᴄᴏɴᴅs.",
+                text=f"{app.mention} <b>»𝚈𝚎𝚗𝚒𝚍𝚎𝚗 𝙱𝚊𝚜̧𝚕𝚊𝚝ı𝚕ı𝚢𝚘𝚛...\n\n𝙻𝚞̈𝚝𝚏𝚎𝚗 𝚃𝚎𝚔𝚛𝚊𝚛 𝙱𝚊𝚜̧𝚕𝚊𝚝𝚖𝚊𝚔 𝚒𝚌̧𝚒𝚗 𝟷𝟻-𝟸𝟶 𝚂𝚊𝚗𝚒𝚢𝚎 𝙱𝚎𝚔𝚕𝚎𝚢𝚒𝚗𝚒𝚣...<b>",
             )
             await remove_active_chat(x)
             await remove_active_video_chat(x)
@@ -132,6 +132,6 @@ async def restart_(_, message):
     except:
         pass
     await response.edit_text(
-        "» ʀᴇsᴛᴀʀᴛ ᴘʀᴏᴄᴇss sᴛᴀʀᴛᴇᴅ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ sᴛᴀʀᴛs..."
+        "<b>» 𝚈𝚎𝚗𝚒𝚍𝚎𝚗 𝙱𝚊𝚜̧𝚕𝚊𝚍ı 𝙻𝚞̈𝚝𝚏𝚎𝚗 𝙱𝚒𝚛 𝙺𝚊𝚌̧ 𝚂𝚊𝚗𝚒𝚢𝚎 𝙱𝚎𝚔𝚕𝚎𝚢𝚒𝚗𝚒𝚣...<b>"
     )
     os.system(f"kill -9 {os.getpid()} && bash start")
