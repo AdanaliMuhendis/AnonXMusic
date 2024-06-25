@@ -1,4 +1,3 @@
-
 import asyncio
 import importlib
 
@@ -56,7 +55,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AnonXMusic").info("Alem Müzik Yayını Bitti...")
+    LOGGER("AnonXMusic").info("Stopping AnonX Music Bot...")
 
 
 if __name__ == "__main__":
