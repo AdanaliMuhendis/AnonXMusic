@@ -110,7 +110,7 @@ async def update_(client, message, _):
         exit()
 
 
-@app.on_message(filters.command(["restart"]) & SUDOERS)
+@app.on_message(filters.command(["restart", "yenile"]) & SUDOERS)
 async def restart_(_, message):
     response = await message.reply_text("<b>»𝚈𝚎𝚗𝚒𝚍𝚎𝚗 𝙱𝚊𝚜̧𝚕𝚊𝚝ı𝚕ı𝚢𝚘𝚛...<b>")
     ac_chats = await get_active_chats()
