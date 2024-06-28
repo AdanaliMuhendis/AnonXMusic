@@ -29,13 +29,13 @@ from config import BANNED_USERS, lyrical
     filters.command(
         [
             "play", "oynat", "çal",
-            "vplay", "voynat", "vçal",
-            "cplay", "koynat", "kçal",
-            "cvplay", "kvoynat", "kvçal",
-            "playforce", "hoynat",
-            "vplayforce", "hvoynat",
-            "cplayforce", "khoynat",
-            "cvplayforce", "khvoynat",
+            "vplay", "voynat",
+            "cplay", "koynat",
+            "cvplay", "kvoynat",
+            "playforce",
+            "vplayforce",
+            "cplayforce",
+            "cvplayforce",
         ]
     )
     & filters.group
