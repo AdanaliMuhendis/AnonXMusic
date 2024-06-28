@@ -38,7 +38,7 @@ from config import BANNED_USERS, OWNER_ID
 
 
 @app.on_message(
-    filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
+    filters.command(["settings", "setting", "ayar", "ayarlar"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def settings_mar(client, message: Message, _):
@@ -350,7 +350,7 @@ async def authusers_mar(client, CallbackQuery, _):
         await CallbackQuery.answer(_["set_cb_3"], show_alert=True)
     except:
         pass
-    if command == "AUTH":
+    if command == "AUTH" or command == "yt":
         is_non_admin = await is_nonadmin_chat(CallbackQuery.message.chat.id)
         if not is_non_admin:
             await add_nonadmin_chat(CallbackQuery.message.chat.id)
